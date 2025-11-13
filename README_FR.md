@@ -1,17 +1,9 @@
-<!-- omit in toc -->
-# NOM DU RÉPERTOIRE
+# Alignements-Marsolais-Pois-Pectine-Acétylestérase-ORDC
 
-[![FR](https://img.shields.io/badge/lang-FR-yellow.svg)](README_FR.md)
-[![EN](https://img.shields.io/badge/lang-EN-blue.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](README_FR.md)
 
-> ℹ️ *Les badges de langue ci-dessus (créés avec [Shields.io](https://shields.io/)) renvoient aux fichiers README, à maintenir en anglais ([README.md](README.md)) et en français ([README_FR.md](README_FR.md)). Voir les instructions (👉 en italique) et le contenu d’exemple fourni sous chaque en-tête de section ci-dessous. Le format du modèle de README a été conçu de manière à ce que, dans la plupart des cas, seules les sections `À propos` et `Crédits` doivent être remplacées et adaptées aux projets de l’utilisateur, en gardant toutes les autres sections telles quelles. Toutefois, le format peut être modifié/adapté au besoin, à condition que le contenu des sections indiquées comme obligatoires soit inclus. Par exemple, si le contenu combiné est bref, les quatre sections – `Crédits`, `Citation`, `Contribution` et `Références` – peuvent être regroupées dans une seule section intitulée `Remerciements`.*
-
----
-
-<!-- omit in toc -->
 ## Table des matières
-
-> 👉 *OPTIONNEL : La table des matières (TDM) peut être omise si le contenu global est bref. La TDM peut être facilement générée automatiquement, par exemple en exécutant la commande [Create Table of Contents](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#table-of-contents) dans l’extension VSCode `Markdown All in One`. Pour exclure un titre de la TDM générée automatiquement, ajoutez `<!-- omit in toc -->` à la fin de ce titre ou juste au-dessus. La TDM sera mise à jour automatiquement chaque fois que le fichier est enregistré après des modifications des titres.*
 
 - [À propos](#à-propos)
 - [Documentation](#documentation)
@@ -22,75 +14,66 @@
 - [Sécurité](#sécurité)
 - [Licence](#licence)
 
----
-
 ## À propos
 
-> 👉 *OBLIGATOIRE : Fournir un résumé, l’objectif et les principales fonctionnalités du projet.*
+Ce dépôt contient des scripts pour la création d'alignements de nucléotides et d'acides aminés à l'aide de 118 génomes de pois et d'un gène de référence de la pectine acétylestérase. Le flux de travail traite des séquences génomiques complètes de trois espèces de pois différentes et génère des alignements de séquences nucléotidiques et protéiques grâce à une série d'étapes automatisées comprenant des recherches BLASTn, l'extraction de séquences, la traduction et l'alignement.
 
-Ce répertoire sert de modèle pour créer des flux de travail reproductibles et personnalisables de traitement de données. Il est conçu pour aider les chercheurs et les développeurs à configurer rapidement de nouveaux projets en fournissant des composants modulaires et paramétrables qui peuvent être facilement adaptés à différents cas d’utilisation. Le modèle peut être personnalisé en ajoutant/supprimant des sections au besoin, tout en maintenant une bonne documentation.
-
----
+**Caractéristiques principales :**
+- Traitement automatisé de 118 génomes entiers de pois
+- Alignement guidé par référence à l'aide de séquences du gène de la pectine acétylestérase
+- Génération d'alignements de séquences nucléotidiques et d'acides aminés
+- Prise en charge de plusieurs espèces (pois et pois chiche)
+- Flux de travail modulaire avec des étapes de traitement distinctes
 
 ## Documentation
 
-> 👉 *OBLIGATOIRE : Toute la documentation technique doit être conservée en dehors du README, idéalement dans un dossier `docs` dédié. Les documents techniques peuvent être rédigés en anglais ou en français. Voir [/docs/user-guide.md](/docs/user-guide.md) pour un modèle de `guide de l’utilisateur`. Lorsque les ressources le permettent et que la demande existe, la documentation technique peut être maintenue dans les deux langues, et, dans ce cas, elle peut même être intégrée aux README respectifs.*
+Pour des informations techniques détaillées, y compris :
+- Instructions étape par étape du flux de travail
+- Exigences d'entrée et sources de données
+- Dépendances logicielles et versions
+- Explications détaillées de chaque étape de traitement
 
-Pour les détails techniques, y compris les instructions d’installation et d’utilisation, veuillez consulter le [Guide de l’utilisateur](/docs/user-guide.md).
-
----
+Veuillez vous référer aux sections de documentation technique ci-dessous ou consulter le [Guide de l'utilisateur](docs/user-guide.md) pour des instructions complètes.
 
 ## Crédits
 
-> 👉 *OBLIGATOIRE : Mentionner tous les contributeurs et collaborateurs, et divulguer tout usage de contenu généré par l’IA, le cas échéant. Si un détail des contributions individuelles est nécessaire, utilisez un fichier [CREDITS.md](CREDITS.md) afin de garder le README concis.*
+**Auteure principale :**
+- Dre Haley Sanderson, programmeuse en bioinformatique, Agriculture et Agroalimentaire Canada (Haley.Sanderson@agr.gc.ca)
 
-Ce modèle a été développé par l’**équipe de projet ABCC**. Pour une liste des contributions individuelles, voir [CREDITS.md](CREDITS.md).
+**Chef d'équipe :**
+- Jackson Eyres, chef d'équipe en bioinformatique, Agriculture et Agroalimentaire Canada (jackson.eyres@agr.gc.ca)
 
-Les fichiers suivants ont été adaptés du [Gabarit pour dépôts de code source ouvert du gouvernement du Canada](https://github.com/canada-ca/template-gabarit?tab=readme-ov-file#gabarit-pour-d%C3%A9p%C3%B4ts-de-code-source-ouvert-du-gouvernement-du-canada) : `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` et `SECURITY.md`.
-
-🤖 Ce projet inclut du contenu généré avec l’aide de modèles d’IA. Tout le matériel généré par IA a été examiné, vérifié et, au besoin, affiné par l’équipe du projet afin d’en assurer l’exactitude.
-
----
+**Organisation :**
+- Agriculture et Agroalimentaire Canada, Gouvernement du Canada
 
 ## Citation
 
-> 👉 *OBLIGATOIRE : Inclure les instructions de citation, idéalement via un fichier [CITATION.cff](CITATION.cff), ce qui permet à GitHub et à des outils comme Zenodo de générer automatiquement des citations normalisées. Voir les liens pour la [documentation sur le format de fichier de citation (CFF)](https://citation-file-format.github.io/) et un [outil de génération de fichier CITATION.cff personnalisé](https://citation-file-format.github.io/cff-initializer-javascript/#/).*
-
-Pour citer ce projet, cliquez sur le bouton **`Cite this repository`** dans la barre latérale de droite.
-
----
+Pour citer ce projet, veuillez cliquer sur le bouton **Citer ce dépôt** dans la barre latérale droite, ou utiliser les informations fournies dans le fichier `CITATION.cff`.
 
 ## Contribution
 
-> 👉 *OPTIONNEL : Fournir des lignes directrices pour contribuer au projet, le cas échéant.*
-
-Les contributions sont les bienvenues ! Veuillez consulter les lignes directrices dans [CONTRIBUTING.md](CONTRIBUTING.md) et vous assurer de respecter notre [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) afin de favoriser un environnement respectueux et inclusif.
-
----
+Les contributions sont les bienvenues! Veuillez contacter l'auteure principale ou le chef d'équipe pour discuter des contributions potentielles. Assurez-vous que toutes les contributions respectent les meilleures pratiques en matière de qualité du code et de documentation.
 
 ## Références
 
-> 👉 *OPTIONNEL : Le cas échéant, fournissez des références aux ressources clés (publications, outils, logiciels). Utiliser un fichier [REFERENCES.md](REFERENCES.md) pour garder le README concis.*
+### Publications clés
 
-Pour une liste des ressources clés utilisées ici, voir [REFERENCES.md](REFERENCES.md).
+- Yang et al. - Séquences du génome du pois (disponibles sur [Zenodo](https://zenodo.org/api/records/6622578/files-archive))
+- Khan et al. - Séquences du génome du pois chiche (disponibles sur [NCBI](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1043734))
 
----
+### Citations logicielles
+
+- **BLAST**: Korf, I., Yandell, M., & Bedell, J. (2003). BLAST. "O'Reilly Media, Inc.".
+- **EMBOSS**: Rice, P., Longden, I., & Bleasby, A. (2000). EMBOSS: the European molecular biology open software suite. *Trends in Genetics*, 16(6), 276-277.
+- **MAFFT**: Katoh, K., Misawa, K., Kuma, K. I., & Miyata, T. (2002). MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform. *Nucleic Acids Research*, 30(14), 3059-3066.
+- **SeqKit**: Shen, W., Le, S., Li, Y., & Hu, F. (2016). SeqKit: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation. *PLoS ONE*, 11(10), e0163962.
 
 ## Sécurité
 
-> 👉 *OBLIGATOIRE : Garder tel quel.*
-
-⚠️ Ne publiez aucun problème de sécurité sur le répertoire public ! Veuillez les signaler comme décrit dans [SECURITY.md](SECURITY.md).
-
----
+⚠️ **Ne publiez aucun problème de sécurité sur le dépôt public !** Veuillez les signaler comme décrit dans [SECURITY.md](SECURITY.md).
 
 ## Licence
 
-> 👉 *OBLIGATOIRE : Si votre projet n’utilise pas la licence MIT par défaut fournie ici, remplacez le fichier `LICENSE` en conséquence. Assurez-vous d’inclure l’avis de droit d’auteur à la fois dans cette section (pour la visibilité) et dans le fichier `LICENSE`. Des ressources utiles pour comprendre et choisir la bonne licence incluent [LicenseHub](https://licensehub.org/fr) (voir leurs outils [Recommandation intelligente de licence](https://licensehub.org/fr/tools/selector) et [Générateur de modèle de licence](https://licensehub.org/fr/tools/generator)) et [tl;drLegal](https://www.tldrlegal.com/). GitHub offre aussi une manière [d’ajouter une licence directement dans le répertoire](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).*
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails. Visitez [LicenseHub](https://licensehub.ca/) ou [tl;drLegal](https://tldrlegal.com/) pour consulter un résumé de cette licence en langage clair.
 
-Voir le fichier [LICENSE](LICENSE) pour plus de détails. Visitez [LicenseHub](https://licensehub.org/fr) ou [tl;drLegal](https://www.tldrlegal.com/) pour consulter un résumé en langage clair de cette licence.
-
-**Droit d’auteur ©** Sa Majesté le Roi du chef du Canada, représenté par le ministre de l’Agriculture et de l’Agroalimentaire, 2025.
-
----
-
+**Copyright © Sa Majesté le Roi du chef du Canada, représentée par la Ministre de l'Agriculture et de l'Agroalimentaire, 2025.**
